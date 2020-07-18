@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="contact"
+            type="com.example.architecturecomponent.dataBinding.Contact" />
+        <variable
+            name="eventHandler"
+            type="com.example.architecturecomponent.dataBinding.EventHandler" />
+        <variable
+            name="imageUrl"
+            type="String" />
+    </data>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".dataBinding.MainActivity">
+            <ImageView
+                android:scaleType="fitXY"
+                app:profileImage="@{imageUrl}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{contact.name,default=arif}" />
+            <TextView
+                android:id="@+id/emailTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{contact.email,default="cse.ariful@gmail.com"}'  />
+            <EditText
+                android:id="@+id/edName"
+                android:text="@={contact.name}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/ibClick"
+                android:text="click here"
+                android:onClick="@{()->eventHandler.onButtonClick(contact.name)}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

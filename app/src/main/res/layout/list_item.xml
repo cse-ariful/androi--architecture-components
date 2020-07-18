@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="6dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="this is repo Name "
+            android:id="@+id/repo_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="this is a simple description "
+            android:id="@+id/repo_Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/repo_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginRight="12dp"
+                android:drawableLeft="@drawable/ic_outline_star_24"
+                android:text="Start"
+                android:id="@+id/repo_Star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:drawableLeft="@drawable/ic_outline_swap_calls_24"
+                android:text="fork"
+                android:id="@+id/repo_fork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
