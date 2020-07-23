@@ -1,0 +1,7 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_file_message">No valid Files found to show</string>
+    <string name="no_folder_message">No Public Folder Found</string>
+    <string name="click_to_browse">Click to browse file</string>
+</resources>

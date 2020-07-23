@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_baseline_video_library_24"
+        android:id="@+id/file_list_fragment"
+        android:title="Files"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/folder_list_fragment"
+        android:icon="@drawable/ic_outline_folder_24"
+        android:title="Folders"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/browse_fragment"
+        android:icon="@drawable/ic_outline_collections_24"
+        android:title="Browse"
+        app:showAsAction="always" />
+</menu>
